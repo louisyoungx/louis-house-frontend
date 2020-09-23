@@ -1,0 +1,9 @@
+.louis-content-main{
+    display: flex;
+    width: 80%;
+    background-color: white;
+    color: white;
+}
+.louis-content-chi{
+    background-color: #00b3ee;
+}

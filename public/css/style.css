@@ -1796,6 +1796,10 @@ textarea {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 
+.posted_on{
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
 .js .animate-box {
   opacity: 0;
 }
@@ -1811,4 +1815,14 @@ textarea {
   color: #000 !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.louis-content-main{
+  display: flex;
+  display: -webkit-flex;
+  width: 80%;
+  background-color: white;
+  color: white;
+}
+.louis-content-chi{
+  background-color: #00b3ee;
+}
+

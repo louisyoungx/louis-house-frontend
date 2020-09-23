@@ -63,23 +63,23 @@
           <h2>My Article</h2>
           <div class="row">
             <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni persavatariatis, voluptatum repellat.</p>
             </div>
           </div>
         </div>
 
         <div v-for="article in articles" :key="article.id" class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <a v-if="article.type === '0'" :href="article.url" >
-            <div class="fh5co-item animate-box">
-              <img :src="article.pic" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+          <a v-if="article.status === '0'" :href="article.url" >
+            <div class="fh5co-item ">
+              <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
               <span class="fh5co-price">{{ article.view }} <sup> read</sup></span>
               <p>{{ article.intro }}</p>
             </div>
           </a>
-          <a v-else-if="article.type === '1'" :href="article.url" >
-            <div class="fh5co-item animate-box margin_top">
-              <img :src="article.pic" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+          <a v-else-if="article.status === '1'" :href="article.url" >
+            <div class="fh5co-item  margin_top">
+              <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
               <span class="fh5co-price">{{ article.view }} <sup> read</sup></span>
               <p>{{ article.intro }}</p>
@@ -90,65 +90,6 @@
 
       </div>
 
-<!--
-        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-        <div class="fh5co-item animate-box">
-          <img src="images/gallery_1.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-          <h3>Bake Potato Pizza</h3>
-          <span class="fh5co-price">$20<sup>.50</sup></span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-        </div>
-        <div class="fh5co-item animate-box">
-          <img src="images/gallery_2.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-          <h3>Bake Potato Pizza</h3>
-          <span class="fh5co-price">$20<sup>.50</sup></span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-        </div>
-      </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <div class="fh5co-item margin_top animate-box">
-            <img src="images/gallery_3.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Salted Fried Chicken</h3>
-            <span class="fh5co-price">$19<sup>.00</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-          <div class="fh5co-item animate-box">
-            <img src="images/gallery_4.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Bake Potato Pizza</h3>
-            <span class="fh5co-price">$20<sup>.50</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-        </div>
-        <div class="clearfix visible-sm-block visible-xs-block"></div>
-        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <div class="fh5co-item animate-box">
-            <img src="images/gallery_5.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Italian Sauce Mushroom</h3>
-            <span class="fh5co-price">$17<sup>.99</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-          <div class="fh5co-item animate-box">
-            <img src="images/gallery_6.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Bake Potato Pizza</h3>
-            <span class="fh5co-price">$20<sup>.50</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <div class="fh5co-item margin_top animate-box">
-            <img src="images/gallery_7.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Fried Potato w/ Garlic</h3>
-            <span class="fh5co-price">$22<sup>.50</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-          <div class="fh5co-item animate-box">
-            <img src="images/gallery_8.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-            <h3>Bake Potato Pizza</h3>
-            <span class="fh5co-price">$20<sup>.50</sup></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-          </div>
-        </div>
--->
 
     </div>
   </div>
@@ -185,88 +126,23 @@
 </template>
 
 <script>
+  import axios from 'axios'
 
   export default {
     name: 'Article',
     data () {
       return {
-        articles:[
-          {
-            id:'1',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'0',
-          },
-          {
-            id:'2',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'1',
-          },
-          {
-            id:'3',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'0',
-          },
-          {
-            id:'4',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'1',
-          },
-          {
-            id:'5',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'0',
-          },
-          {
-            id:'6',
-            title:'李美妮是笨蛋',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'1',
-          },
-          {
-            id:'7',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'0',
-          },
-          {
-            id:'8a',
-            title:'十六型人格',
-            view:'99+',
-            url:'/',
-            intro:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.',
-            pic:'images/person_1.jpg',
-            type:'1',
-          },
-        ]
+        articles :[],
       }
+    },
+    mounted() {
+      axios.get("/API/Article/list/").then(res=>{
+        console.log(res.data);
+        this.articles = res.data;
+      }).catch(err=>{
+        console.log(err);
+      })
     }
-
   }
 </script>
 

@@ -47,7 +47,7 @@
           <div class="col-md-12 text-center">
             <div class="display-t js-fullheight">
               <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                <h1>Hey There<br><em>&amp;</em>Welcome to<br>Louis<em>·</em>Young</h1><br>
+                <h1>Hey There<br><em>&amp;</em>Welcome to<br>Louis<em>·</em>House</h1><br>
                 <h2>Brought to you  by <a href="https://louisyoung.work/" target="_blank">louisyoung.work</a></h2>
               </div>
             </div>

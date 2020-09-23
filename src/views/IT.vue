@@ -71,17 +71,17 @@
       </div>
       <div class="row">
 
-        <div v-for="article in articles" class="col-md-4">
-          <div class="fh5co-blog animate-box">
-            <a :href="article.url" :style="{backgroundImage:article.avatar}" class="blog-bg"></a>
+        <div v-for="IT in ITs" class="col-md-4">
+          <div class="fh5co-blog  ">
+            <a :href="IT.url" :style="{backgroundImage:IT.avatar}" class="blog-bg"></a>
             <div class="blog-text">
-              <span class="posted_on">{{ article.time }}</span>
-              <h3><a :href="article.url" >{{ article.name }}</a></h3>
-              <p>{{ article.intro }}</p>
+              <span class="posted_on">{{ IT.time }}</span>
+              <h3><a :href="IT.url" >{{ IT.title }}</a></h3>
+              <p>{{ IT.intro }}</p>
               <ul class="stuff">
-                <li><i class="icon-heart2"></i>{{ article.view }}</li>
-                <li><i class="icon-eye2"></i>{{ article.view }}</li>
-                <li><a :href="article.url" >Read More<i class="icon-arrow-right22"></i></a></li>
+                <li><i class="icon-heart2"></i>{{ IT.view }}</li>
+                <li><i class="icon-eye2"></i>{{ IT.view }}</li>
+                <li><a :href="IT.url" >Read More<i class="icon-arrow-right22"></i></a></li>
               </ul>
             </div>
           </div>
@@ -124,11 +124,14 @@
 
 <script>
 
+  import axios from "axios";
+
   export default {
     name: 'IT',
     data () {
       return {
-        articles:[
+        ITs: [],
+        ITs_test:[
           {
             name:'Intermediate Python',
             avatar:'url(images/home/book1-Intermediate-Python.jpg)',
@@ -212,8 +215,15 @@
           },
         ]
       }
+    },
+    mounted() {
+      axios.get("/API/IT/list/").then(res=>{
+        console.log(res.data);
+        this.ITs = res.data;
+      }).catch(err=>{
+        console.log(err);
+      })
     }
-
   }
 </script>
 

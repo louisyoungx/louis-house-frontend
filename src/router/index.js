@@ -5,6 +5,7 @@ import Gallery from '../views/Gallery.vue'
 import Article from '../views/Article.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
+import Content from '../views/Content.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/Contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/Content',
+    name: 'Content',
+    component: Content
   },
 ]
 
