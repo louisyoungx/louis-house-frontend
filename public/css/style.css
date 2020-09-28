@@ -1815,14 +1815,5 @@ textarea {
   color: #000 !important;
 }
 
-.louis-content-main{
-  display: flex;
-  display: -webkit-flex;
-  width: 80%;
-  background-color: white;
-  color: white;
-}
-.louis-content-chi{
-  background-color: #00b3ee;
-}
+
 

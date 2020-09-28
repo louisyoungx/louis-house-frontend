@@ -1,9 +1,120 @@
 .louis-content-main{
+    margin: 0 auto;
     display: flex;
-    width: 80%;
-    background-color: white;
-    color: white;
+    display: -webkit-flex;
+    color: #fff !important;
+    width: 95%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.louis-content-main h2{
+    color: #fff !important;
+}
+.louis-content-main p{
+    color: #fff !important;
+}
+.louis-content-main strong{
+    color: #fff !important;
+}
+.louis-content-main img{
+    width: 80% !important;
+    margin: 0 auto;
+}
+.louis-content-top{
+    box-shadow: white;
+    margin-top: 30px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 800px;
+    flex-grow: 3;
+    background-color: #2e2e2e;
+    border: 2px dashed  #5b5b5b;
+    border-radius: 20px;
+}
+.louis-content-top a{
+    transition: 0.2s;
+    color: #fff;
+}
+.louis-content-top a:hover{
+    color: #d9534f;
+}
+.louis-content-top-chi{
+    margin-right: 1%;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.louis-content-body{
+    box-shadow: white;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 800px;
+    flex-grow: 3;
+    background-color: #2e2e2e;
+    border: 2px dashed  #5b5b5b;
+    border-radius: 20px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.louis-content-point{
+    display: -webkit-flex;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.louis-content-pre{
+}
+.louis-content-next{
 }
 .louis-content-chi{
-    background-color: #00b3ee;
+    flex-grow: 1;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.louis-content-rightbar{
+    width: 300px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.louis-content-classify{
+    max-width: 300px;
+    background-color: gray;
+    flex-grow: 1;
+    background-color: #2e2e2e;
+    border: 2px dashed  #5b5b5b;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+.louis-content-type{
+    width: 300px;
+    flex-grow: 1;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+.louis-content-tag-div{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.louis-content-tags{
+    background-color: #2e2e2e;
+    border: 2px dashed  #5b5b5b;
+    border-radius: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+
 }

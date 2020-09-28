@@ -69,7 +69,7 @@
         </div>
 
         <div v-for="article in articles" :key="article.id" class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <a v-if="article.status === '0'" :href="article.url" >
+          <a v-if="article.status === '0'" @click="getContent(article.url)" >
             <div class="fh5co-item ">
               <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
@@ -77,7 +77,7 @@
               <p>{{ article.intro }}</p>
             </div>
           </a>
-          <a v-else-if="article.status === '1'" :href="article.url" >
+          <a v-else-if="article.status === '1'" @click="getContent(article.url)" >
             <div class="fh5co-item  margin_top">
               <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
@@ -142,6 +142,12 @@
       }).catch(err=>{
         console.log(err);
       })
+    },
+    methods:{
+      getContent(url){
+        //console.log(url);
+        this.$router.push('/Details/Article/'+url)
+      }
     }
   }
 </script>

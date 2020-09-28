@@ -512,4 +512,5 @@ export default {
   @import "../assets/css/bootstrap.css";
   @import "../assets/css/flexslider.css";
   @import "../assets/css/style.css";
+  @import "../assets/css/louis-content.css";
 </style>
