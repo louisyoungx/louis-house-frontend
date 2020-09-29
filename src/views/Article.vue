@@ -60,16 +60,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 fh5co-heading animate-box">
-          <h2>My Article</h2>
+          <h2>Philosophy &amp; Thinking</h2>
           <div class="row">
             <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni persavatariatis, voluptatum repellat.</p>
+              <p>
+                在现代社会谈论真理、至善显得可笑。人们乐意匍匐在山脚下的乐园，不愿抬头想要征服高山。这趟旅程注定是孤独的，唯真理与你共存。<br><br>
+
+                前人的地图里，没有线索，唯有路边的指路人，对你说，<br><br>
+
+                ——去攀登吧，少年。
+              </p>
             </div>
           </div>
         </div>
 
         <div v-for="article in articles" :key="article.id" class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-          <a v-if="article.status === '0'" @click="getContent(article.url)" >
+          <a class="article-point" v-if="article.status === '0'" @click="getContent(article.url)" >
             <div class="fh5co-item ">
               <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
@@ -77,7 +83,7 @@
               <p>{{ article.intro }}</p>
             </div>
           </a>
-          <a v-else-if="article.status === '1'" @click="getContent(article.url)" >
+          <a class="article-point" v-else-if="article.status === '1'" @click="getContent(article.url)" >
             <div class="fh5co-item  margin_top">
               <img :src="article.avatar" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
               <h3>{{ article.title }}</h3>
@@ -97,24 +103,9 @@
   <div id="fh5co-featured-testimony" class="fh5co-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 fh5co-heading animate-box">
-          <h2>Testimony</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-5 animate-box img-to-responsive">
-          <img src="images/person_1.jpg" alt="">
-        </div>
-        <div class="col-md-7 animate-box">
-          <blockquote>
-            <p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-            <p class="author"><cite>&mdash; Jane Smith</cite></p>
-          </blockquote>
-        </div>
+        <leave-notes></leave-notes>
+
       </div>
     </div>
   </div>
@@ -127,9 +118,11 @@
 
 <script>
   import axios from 'axios'
+  import LeaveNotes from "../components/leave-notes";
 
   export default {
     name: 'Article',
+    components: {LeaveNotes},
     data () {
       return {
         articles :[],
@@ -153,5 +146,7 @@
 </script>
 
 <style scoped>
-
+  .article-point{
+    cursor: pointer;
+  }
 </style>

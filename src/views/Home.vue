@@ -213,19 +213,8 @@
             </div>
           </div>
 
-          <div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-            <img src="images/home/article.jpg" alt="">
-          </div>
-          <div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-            <blockquote>
-              <p> &ldquo;
-                理解，把外在的东西变为内在。<br><br>
-                思辨，让思维保持轻松和清晰，不惑。<br><br>
-                阐述，是理解、思考、掌握精髓之后才能做到的。
-                &rdquo;</p>
-              <p class="author"><cite>&mdash; Louis Young</cite></p>
-            </blockquote>
-          </div>
+          <leave-notes></leave-notes>
+
         </div>
       </div>
     </div>
@@ -239,7 +228,7 @@
               <p>记录的生活经历，曾沐浴过的阳光，空气的温度，土壤和水分。</p>
             </div>
           </div>
-          <div class="col-md-6 col-md-push-1 animate-box">
+          <div class="col-md-6 col-md-push-1">
             <aside id="fh5co-slider-wrwap">
               <div class="flexslider">
                 <ul class="slides">
@@ -401,11 +390,15 @@ import jquery_waypoints from "../assets/js/jquery.waypoints.min.js"
 import jquery_stellar from "../assets/js/jquery.stellar.min.js"
 import jquery_flexslider from "../assets/js/jquery.flexslider-min.js"
 import main from "../assets/js/main.js"
+//import gallery_js from "../assets/js/gallery/scripts"
+//import wow from "../assets/js/gallery/wow"
 
 import Footer from '../components/footer'
+import LeaveNotes from "../components/leave-notes";
 export default {
   name: 'Home',
   components: {
+    LeaveNotes,
     Footer,
   },
   data(){
@@ -503,6 +496,8 @@ export default {
   jquery_stellar,
   jquery_flexslider,
   main,
+  //gallery_js,
+  //wow,
 }
 </script>
 

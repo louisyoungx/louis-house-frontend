@@ -62,87 +62,46 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 fh5co-heading animate-box">
-          <h2>My Gallery</h2>
+          <h2>photography &amp; Art</h2>
           <div class="row">
             <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</p>
+              <p>朋友圈中的糖水片如何影响了风景摄影的审美？<br>
+                尝试探索城市与自然、时间之间的变迁关系的新地形摄影是怎么回事？<br>
+                用搭建的场景，来表现现实真相的观念摄影，对风景摄影有什么启发？<br>
+                回归本质进行深度思考，才有可能走得更远。</p>
             </div>
           </div>
-        </div>
-
-
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_1.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_2.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-6 col-sm-6 fh5co-gallery_item">
-          <div class="fh5co-bg-img fh5co-gallery_big" style="background-image: url(images/gallery_8.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_4.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_5.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_5.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_6.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_7.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_8.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-6 col-sm-6 fh5co-gallery_item">
-          <div class="fh5co-bg-img fh5co-gallery_big" style="background-image: url(images/gallery_9.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_1.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_2.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-6 col-sm-6 fh5co-gallery_item">
-          <div class="fh5co-bg-img fh5co-gallery_big" style="background-image: url(images/gallery_8.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_4.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_5.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_5.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_6.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-3 col-sm-3 fh5co-gallery_item">
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_7.jpeg);" data-trigger="zoomerang"></div>
-          <div class="fh5co-bg-img" style="background-image: url(images/gallery_8.jpeg);" data-trigger="zoomerang"></div>
-        </div>
-        <div class="col-md-6 col-sm-6 fh5co-gallery_item">
-          <div class="fh5co-bg-img fh5co-gallery_big" style="background-image: url(images/gallery_9.jpeg);" data-trigger="zoomerang"></div>
         </div>
       </div>
     </div>
   </div>
-
+  <photo></photo>
   <div id="fh5co-featured-testimony" class="fh5co-section">
     <div class="container">
       <div class="row">
         <div class="col-md-12 fh5co-heading animate-box">
-          <h2>Testimony</h2>
+          <h2>photography &amp; Art</h2>
           <div class="row">
             <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
+              <p></p>
             </div>
           </div>
         </div>
 
         <div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-          <img src="images/person_1.jpg" alt="">
+          <img src="images/home/article.jpg" alt="">
         </div>
         <div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
           <blockquote>
-            <p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-            <p class="author"><cite>&mdash; Jane Smith</cite></p>
+            <p> &ldquo;
+              我们为什么要拍风景？仅仅是作为一种「存在过」的记录？未必。<br><br>
+              深究下去又有了：风景的概念是什么？花花草草大山大河即是风景？未必。<br><br>
+              再深究下去：风景除了眼前转瞬即逝的一幕，是否可能存在永恒？也许。
+              &rdquo;</p>
+            <p class="author"><cite>&mdash; Louis Young</cite></p>
           </blockquote>
         </div>
+
       </div>
     </div>
   </div>
@@ -153,12 +112,19 @@
 
 <script>
   import Footer from '../components/footer'
+  import Photo from "../components/photo";
+  import LeaveNotes from "../components/leave-notes";
   export default {
     name: 'Gallery',
-    components: { Footer },
+    components: {LeaveNotes, Photo, Footer },
   }
 </script>
 
 <style scoped>
-
+  .fh5co-heading{
+    margin-bottom: 0!important;
+  }
+  #fh5co-gallery{
+    margin-bottom: 0!important;
+  }
 </style>

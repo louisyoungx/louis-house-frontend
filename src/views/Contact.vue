@@ -61,8 +61,12 @@
       <div class="row animate-box">
         <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
           <h2>Don't be shy, let's chat.</h2>
-          <p>联系我，你的消息会直接推送到我的微信公众号</p>
-          <p><a href="mailto:info@yourdomainname.com" class="btn btn-primary btn-outline">Contact</a></p>
+          <p>
+            联系我，你的消息会直接推送到我的微信公众号<br>
+            或者发送邮件到 eric_aaron@icloud.com
+
+          </p>
+          <p><a href="mailto:info@yourdomainname.com" class="btn btn-primary btn-outline">发邮件</a></p>
         </div>
       </div>
 

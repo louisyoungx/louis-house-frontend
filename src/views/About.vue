@@ -252,50 +252,7 @@
     </div>
   </div>
 
-  <div id="fh5co-featured-testimony" class="fh5co-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 fh5co-heading">
-          <h2>My Projects</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <p>我完成的项目</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-5 animate-box img-to-responsive">
-          <img src="images/about/Nchu-banner.jpg" alt="">
-        </div>
-        <div class="col-md-7 animate-box">
-          <blockquote>
-            <p> &ldquo; Web二手交易平台,基于Django开发 &rdquo;</p>
-            <p class="author"><cite>&mdash; 昌航有物</cite></p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="fh5co-featured-testimony" class="fh5co-section">
-    <div class="container">
-      <div class="row">
-
-
-        <div class="col-md-5 animate-box img-to-responsive">
-          <img src="images/about/Louis-LOGO.jpg" alt="">
-        </div>
-        <div class="col-md-7 animate-box">
-          <blockquote>
-            <p> &ldquo; 实现前后端分离的项目，前端用的Vue全家桶，后端API由Django提供 &rdquo;</p>
-            <p class="author"><cite>&mdash; Louis的小屋</cite></p>
-          </blockquote>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
+  <my-projects></my-projects>
 
 
 
@@ -304,8 +261,14 @@
 
 <script>
   import main from '../assets/js/main.js'
+  import MyProjects from "../components/my-projects";
   export default {
     name:"About",
+    components: {MyProjects},
     main
   }
 </script>
+
+<style scoped>
+
+</style>

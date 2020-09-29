@@ -62,10 +62,12 @@
   <div id="fh5co-blog" class="fh5co-section">
     <div class="container">
       <div class="col-md-12 fh5co-heading animate-box">
-        <h2>My Article</h2>
+        <h2>Web &amp; Internet</h2>
         <div class="row">
           <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</p>
+            <p>
+              神秘的 IT 工程师！为什么总感觉从事技术的人很难沟通？为什么中国的程序员常常自称「码农」？到底「喜欢编程」是个什么感觉？
+            </p>
           </div>
         </div>
       </div>
@@ -91,30 +93,11 @@
     </div>
   </div>
 
-  <div id="fh5co-featured-testimony" class="fh5co-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 fh5co-heading animate-box">
-          <h2>Testimony</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-5 animate-box img-to-responsive">
-          <img src="images/person_1.jpg" alt="">
-        </div>
-        <div class="col-md-7 animate-box">
-          <blockquote>
-            <p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-            <p class="author"><cite>&mdash; Jane Smith</cite></p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
+  <my-projects></my-projects>
+
+
+
 
 
 
@@ -125,9 +108,12 @@
 <script>
 
   import axios from "axios";
+  import LeaveNotes from "../components/leave-notes";
+  import MyProjects from "../components/my-projects";
 
   export default {
     name: 'IT',
+    components: {MyProjects, LeaveNotes},
     data () {
       return {
         ITs: [],
