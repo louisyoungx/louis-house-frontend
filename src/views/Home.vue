@@ -70,7 +70,7 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 作为一个杠精青年还有很多你没见过的称号：<br>
                 男配摄影师/ 拖鞋设计师/ 鸡汤受害者/ ICU当家码农/ A股老韭菜/ 用脚画画的手残画手/ 一看书就油腻的面包虫/ 聊天必抬杠的钢筋/ 深夜出没的奇行种猫特鹰 ······ </p>
-              <p><a href="#" class="btn btn-primary btn-outline">About Me</a></p>
+              <p><a href="/About" class="btn btn-primary btn-outline">About Me</a></p>
             </div>
           </div>
         </div>
