@@ -6,6 +6,7 @@ import Article from '../views/Article.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Details from '../views/Details.vue'
+import Test from "../views/Test";
 
 const routes = [
   {
@@ -47,6 +48,11 @@ const routes = [
     path: '/Details/Article/:ID',
     name: 'Details_Article',
     component: Details,
+  },
+  {
+    path: '/Test',
+    name: 'Test',
+    component: Test,
   },
 ]
 

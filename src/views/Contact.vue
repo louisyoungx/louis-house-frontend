@@ -70,6 +70,7 @@
         </div>
       </div>
 
+
       <div class="row">
         <div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
           <form action="#" id="form-wrap">
@@ -109,6 +110,10 @@
 <script>
   export default {
     name: 'Contact',
+    data(){
+      return{
+      }
+    }
   }
 </script>
 
