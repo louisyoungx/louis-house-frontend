@@ -10,10 +10,10 @@ pre[class*="language-"] {
 	color: white;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
+
 	text-align: left;
 	text-shadow: 0 -.1em .2em black;
-	white-space: pre;
+
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
@@ -172,7 +172,7 @@ pre[data-line] {
 	pointer-events: none;
 	position: absolute;
 	right: 0;
-	white-space: pre;
+
 	z-index: 0;
 }
 

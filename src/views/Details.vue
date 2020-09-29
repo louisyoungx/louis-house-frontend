@@ -1,4 +1,5 @@
 <template>
+    <div class="fh5co-loader"></div>
     <nav class="fh5co-nav" role="navigation">
         <!-- <div class="top-menu"> -->
         <div class="container">
@@ -117,6 +118,7 @@
 
 <script>
     import axios from "axios";
+    import bootstrap from "../assets/js/bootstrap.min"
 
     export default {
         name: "Content",
@@ -153,6 +155,7 @@
             console.log(this.type);
 
             axios.get(this.Django_Path).then(res=>{
+                $(".fh5co-loader").fadeOut("slow");
                 console.log(res.data);
                 window.scrollTo(0,0)
                 this.next = res.data.next
@@ -166,6 +169,7 @@
                 console.log(res.data.token);
                 this.token = res.data.token;
             }).catch(err=>{
+                alert("请求失败404")
                 console.log(err);
             })
 
@@ -236,22 +240,14 @@
             }
 
         },
+        bootstrap,
     }
 </script>
 
 <style scoped>
     @import "../assets/css/prism/prism-twilight.css";
-    pre{
-        display: block;
-        padding: 9.5px;
-        margin: 0 0 10px;
-        font-size: 13px;
-        line-height: 1.42857;
-        word-break: break-all;
-        word-wrap: break-word;
-        color: #333333;
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+    @import "../assets/css/bootstrap.css";
+    pre code{
+        font-size: 12px!important;
     }
 </style>

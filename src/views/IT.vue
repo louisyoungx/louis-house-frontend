@@ -137,5 +137,7 @@
 </script>
 
 <style scoped>
-
+  .fh5co-blog{
+    cursor: pointer;
+  }
 </style>
